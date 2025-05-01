@@ -8,10 +8,10 @@
     <title>De Quanto eu Preciso?</title>
 </head>
 <body>
-    <h1>De Quanto eu Preciso?</h1><br>
+    <h1>De Quanto eu Preciso?</h1>
     
     <div class="main-container">
-        <p style="margin-bottom: 1rem; font-style: italic;">Digite as suas notas para saber quanto precisa tirar na avalização presencial</p>
+        
         <div class="nota nota1">
             <span>Nota da Avaliação I</span>
             <input type="number" name="" id="">
@@ -25,24 +25,19 @@
             <input type="number" name="" id="">
         </div>
         <div class="nota nota4">
-            <span>Fez a atividade Valendo 0,50?</span>
-            <div class="radios">
-                <input type="radio" name="Fiz" id="" value="Fiz">
-                <label for="">Fiz</label>
-                <input type="radio" name="Não Fiz" id="" value="Não Fiz">
-                <label for="">Não Fiz</label>
-            </div>
+            <span>Fez a Atividade Valendo 0,50?</span>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
         </div>
         <div class="nota nota-desejada">
             <span>Qual a nota desejada?</span>
             <input type="number" name="" id="">
         </div>
-        <div class="nota nota-necessaria">
-            <span>
-                Para alcançar 7,0 você precisa tirar: 5,00 na avaliação presencial.
-            </span>
-           
-        </div>
+        <input class="calcular" type="button" value="Calcular">
+        
 
     </div>
 </body>
