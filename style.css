@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #121212;
     color: #e0e0e0;
     display: flex;
@@ -22,7 +22,7 @@ body {
     gap: 1rem;
     margin-top: 2rem;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 2rem;
     background-color: #1e1e1e;
     box-shadow: 0 0 15px rgba(184, 79, 206, 0.2);
@@ -44,8 +44,8 @@ body {
 
 input {
     margin-top: 0.5rem;
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
     border: none;
     background-color: #252525;
     border: 1px solid #7b308a;
@@ -137,4 +137,77 @@ input:focus {
 .calcular:hover {
     background-color: #641977;
     box-shadow: 0 0 10px rgba(184, 79, 206, 0.3);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: #1e1e1e;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #7b308a;
+    box-shadow: 0 0 20px rgba(184, 79, 206, 0.3);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #b84fce;
+}
+
+.modal-content {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.modal-content h3 {
+    color: #b84fce;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.modal-content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.modal-content .error {
+    color: #ff6b6b;
+}
+
+.modal-content strong {
+    color: #b84fce;
 }
