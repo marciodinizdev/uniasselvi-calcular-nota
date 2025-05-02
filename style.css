@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     background-color: #121212;
     color: #e0e0e0;
     display: flex;
@@ -17,7 +17,7 @@ body {
 }
 
 h2 {
-    color: #4f51ce;
+    color: #a1a2e8;
 
 }
 
@@ -54,8 +54,8 @@ h2 {
 
 input {
     margin-top: 0.5rem;
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
     border: none;
     background-color: #252525;
     border: 1px solid #4f51ce; /* Nova cor principal */
@@ -132,7 +132,8 @@ input:focus {
     border: none;
     height: 4rem;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -199,12 +200,12 @@ input:focus {
 .modal-content h3 {
     color: #4f51ce; /* Nova cor principal */
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 .modal-content p {
     margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .modal-content .error {
