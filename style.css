@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background-color: #121212;
     color: #e0e0e0;
     display: flex;
@@ -16,18 +16,24 @@ body {
     min-height: 100vh;
 }
 
+h2 {
+    color: #4f51ce;
+
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 1.1rem;
     margin-top: 2rem;
     width: 100%;
     max-width: 400px;
     padding: 2rem;
     background-color: #1e1e1e;
-    box-shadow: 0 0 15px rgba(184, 79, 206, 0.2);
+    box-shadow: 0 0 45px 15px rgba(79, 81, 206, 0.3); /* Atualizado para #4f51ce */
     border-radius: 1rem;
-    border: 1px solid #333;
+    
 }
 
 .nota {
@@ -36,19 +42,23 @@ body {
     width: 100%;
     max-width: 500px;
     background-color: #252525;
-    box-shadow: 0 0 10px rgba(184, 79, 206, 0.1);
+    box-shadow: 0 0 10px rgba(79, 81, 206, 0.2); /* Atualizado */
     border-radius: 1rem;
-    border: 1px solid #333;
+    border: 1px solid #262763;
     padding: 1rem;
+}
+
+.nota:focus-within {
+    box-shadow: 0 0 25px rgba(79, 81, 206, 0.4); /* Atualizado */
 }
 
 input {
     margin-top: 0.5rem;
-    height: 2.5rem;
-    font-size: 1.2rem;
+    height: 3rem;
+    font-size: 1.5rem;
     border: none;
     background-color: #252525;
-    border: 1px solid #7b308a;
+    border: 1px solid #4f51ce; /* Nova cor principal */
     color: #e0e0e0;
     padding: 0 1rem;
     border-radius: 0.5rem;
@@ -57,16 +67,8 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #b84fce;
-    box-shadow: 0 0 0 2px rgba(184, 79, 206, 0.3);
-}
-
-#toggle-input {
-    width: 30px;
-}
-
-#toggle-input:focus {
-    outline: none;
+    border-color: #6a6cff; /* Tom mais claro da cor principal */
+    box-shadow: 0 0 0 2px rgba(79, 81, 206, 0.4); /* Atualizado */
 }
 
 /* Toggle */
@@ -89,7 +91,7 @@ input:focus {
     position: absolute;
     cursor: pointer;
     inset: 0;
-    background: #d9b9fa;
+    background: #a1a2e8; /* Tom mais claro da cor principal */
     border-radius: 50px;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
     border: 1px solid #444;
@@ -109,12 +111,12 @@ input:focus {
 }
 
 .switch input:checked + .slider {
-    background: #b84fce;
-    border-color: #a846c0;
+    background: #4f51ce; /* Nova cor principal */
+    border-color: #4244b8; /* Tom mais escuro */
 }
 
 .switch input:focus + .slider {
-    box-shadow: 0 0 5px #b84fce;
+    box-shadow: 0 0 5px #4f51ce; /* Atualizado */
 }
 
 .switch input:checked + .slider:before {
@@ -125,7 +127,7 @@ input:focus {
 }
 
 .calcular {
-    background-color: #b84fce;
+    background-color: #4f51ce; /* Nova cor principal */
     color: #e0e0e0;
     border: none;
     height: 4rem;
@@ -134,12 +136,13 @@ input:focus {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .calcular:hover {
-    background-color: #641977;
-    box-shadow: 0 0 10px rgba(184, 79, 206, 0.3);
+    background-color: #3a3cb4; /* Tom mais escuro */
+    box-shadow: 0 0 10px rgba(79, 81, 206, 0.4); /* Atualizado */
 }
 
-/* Modal */
+/* Modal styles */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -166,9 +169,9 @@ input:focus {
     border-radius: 1rem;
     padding: 2rem;
     width: 90%;
-    max-width: 400px;
-    border: 1px solid #7b308a;
-    box-shadow: 0 0 20px rgba(184, 79, 206, 0.3);
+    max-width: 500px;
+    border: 1px solid #4f51ce; /* Atualizado */
+    box-shadow: 0 0 20px rgba(79, 81, 206, 0.4); /* Atualizado */
     position: relative;
 }
 
@@ -179,13 +182,13 @@ input:focus {
     background: none;
     border: none;
     color: #e0e0e0;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .close-modal:hover {
-    color: #b84fce;
+    color: #6a6cff; /* Tom mais claro */
 }
 
 .modal-content {
@@ -194,7 +197,7 @@ input:focus {
 }
 
 .modal-content h3 {
-    color: #b84fce;
+    color: #4f51ce; /* Nova cor principal */
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
@@ -209,5 +212,5 @@ input:focus {
 }
 
 .modal-content strong {
-    color: #b84fce;
+    color: #6a6cff; /* Tom mais claro */
 }
